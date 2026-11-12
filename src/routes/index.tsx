@@ -14,7 +14,6 @@ import {
   MessageCircle,
   RotateCcw,
   ShieldCheck,
-  Sparkles,
   Wallet,
   X,
 } from "lucide-react";
@@ -40,7 +39,6 @@ import {
 import { trips, defaultPolicies, type Trip } from "@/lib/trip-catalog";
 import { bookingSchema, createBookingMessage, createWhatsAppUrl } from "@/lib/whatsapp-booking";
 import { trackTripView, trackBookingFormStart, trackWhatsAppEnquiryClick } from "@/lib/analytics";
-import { AITripMatcher } from "@/components/AITripMatcher";
 
 type BookingField = "name" | "phone" | "journey" | "date" | "travelers" | "note";
 
