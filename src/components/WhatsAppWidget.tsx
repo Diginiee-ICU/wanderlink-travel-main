@@ -84,9 +84,12 @@ export function WhatsAppWidget({ onOpenBookingForm }: WhatsAppWidgetProps) {
           <div className="p-4">
             <div className="rounded-xl rounded-tl-sm bg-surface-soft p-3.5 text-xs leading-relaxed text-foreground/90">
               <p>
-                Hello! Looking for a slower, more thoughtful trip across India? Tell us your preferred rhythm and dates, and we’ll plan it with you.
+                Hello! Looking for a slower, more thoughtful trip across India? Tell us your
+                preferred rhythm and dates, and we’ll plan it with you.
               </p>
-              <span className="mt-1.5 block text-[10px] text-muted-foreground">Direct planning on WhatsApp</span>
+              <span className="mt-1.5 block text-[10px] text-muted-foreground">
+                Direct planning on WhatsApp
+              </span>
             </div>
 
             <div className="mt-4 grid gap-2">
