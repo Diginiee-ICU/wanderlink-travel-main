@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "events": {
+    "project.booking_form_started": {
+      "event_schema_version": 1,
+      "description": "A visitor opens the booking form.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {},
+        "required": []
+      }
+    },
+    "project.trip_viewed": {
+      "event_schema_version": 2,
+      "description": "A trip enters the visitor's visible browsing area.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "trip_name": {
+            "type": "string",
+            "enum": ["Ladakh, the high road", "The Kerala backwaters", "A softer side of Jaipur"]
+          }
+        },
+        "required": []
+      }
+    },
+    "project.whatsapp_enquiry_clicked": {
+      "event_schema_version": 1,
+      "description": "A visitor submits the booking form to open a prepared WhatsApp enquiry.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {},
+        "required": []
+      }
+    }
+  }
+}
