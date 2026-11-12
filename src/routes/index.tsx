@@ -260,9 +260,6 @@ function Index() {
           className="hidden items-center gap-8 text-sm text-muted-foreground md:flex"
           aria-label="Main navigation"
         >
-          <a className="transition-colors hover:text-primary" href="#ai-trip-matcher">
-            AI Matcher
-          </a>
           <a className="transition-colors hover:text-primary" href="#journeys">
             Journeys
           </a>
@@ -322,13 +319,6 @@ function Index() {
                 >
                   Find your journey <ArrowRight aria-hidden="true" />
                 </Button>
-                <a
-                  href="#ai-trip-matcher"
-                  className="inline-flex h-12 items-center gap-2 rounded-md border border-primary-foreground/30 bg-primary-foreground/10 px-4 text-sm font-medium text-primary-foreground backdrop-blur-sm transition-colors hover:bg-primary-foreground/20"
-                >
-                  <Sparkles className="size-4" aria-hidden="true" />
-                  Try AI Matcher
-                </a>
               </div>
             </div>
           </div>
@@ -360,11 +350,6 @@ function Index() {
           </a>
         </div>
       </section>
-
-      {/* Feature 2: In-app AI Trip Matcher */}
-      <AITripMatcher
-        onSelectTrip={(tripName, date) => startBooking(tripName, "ai_recommendation", date)}
-      />
 
       {/* Journeys Section with Filters & Clear Policies */}
       <section
