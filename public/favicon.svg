@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14323b" />
+      <stop offset="100%" stop-color="#091b20" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8cd3c7" />
+      <stop offset="100%" stop-color="#4a9b9b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" stroke="url(#ring)" stroke-width="2.5" />
+
+  <!-- Outer latitude and longitude rings -->
+  <ellipse cx="32" cy="32" rx="20" ry="20" fill="none" stroke="#8cd3c7" stroke-width="1.2" stroke-opacity="0.35" />
+  <ellipse cx="32" cy="32" rx="10" ry="20" fill="none" stroke="#8cd3c7" stroke-width="1.2" stroke-opacity="0.45" />
+  <line x1="12" y1="32" x2="52" y2="32" stroke="#8cd3c7" stroke-width="1.2" stroke-opacity="0.4" />
+
+  <!-- Stylized central compass star -->
+  <path d="M 32 16 L 35 29 L 48 32 L 35 35 L 32 48 L 29 35 L 16 32 L 29 29 Z" fill="#f4ebd9" />
+  <circle cx="32" cy="32" r="2.5" fill="#14323b" />
+</svg>
