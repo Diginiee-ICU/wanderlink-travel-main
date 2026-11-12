@@ -81,14 +81,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Elsewhere — Thoughtful journeys across India" },
+      {
+        name: "description",
+        content:
+          "Find a different pace with thoughtful, made-for-you journeys through the many landscapes of India. Enquire and plan directly on WhatsApp.",
+      },
+      { name: "author", content: "Elsewhere" },
+      { property: "og:title", content: "Elsewhere — Thoughtful journeys across India" },
+      {
+        property: "og:description",
+        content:
+          "Find a different pace with thoughtful, made-for-you journeys through the many landscapes of India.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -101,7 +108,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Karla:wght@400;500;600;700&display=swap",
       },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png" },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "apple-touch-icon", sizes: "192x192", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,
