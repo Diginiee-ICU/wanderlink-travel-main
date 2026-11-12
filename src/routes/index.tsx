@@ -39,6 +39,8 @@ import {
 import { trips, defaultPolicies, type Trip } from "@/lib/trip-catalog";
 import { bookingSchema, createBookingMessage, createWhatsAppUrl } from "@/lib/whatsapp-booking";
 import { trackTripView, trackBookingFormStart, trackWhatsAppEnquiryClick } from "@/lib/analytics";
+import { Preloader } from "@/components/Preloader";
+import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 
 type BookingField = "name" | "phone" | "journey" | "date" | "travelers" | "note";
 
