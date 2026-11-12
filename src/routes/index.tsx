@@ -244,6 +244,8 @@ function Index() {
 
   return (
     <main className="overflow-hidden bg-background text-foreground">
+      <Preloader />
+
       {/* Navigation Header */}
       <header className="mx-auto flex max-w-[1440px] items-center justify-between gap-5 px-5 py-5 sm:px-8 lg:px-14">
         <a href="#top" className="flex items-center gap-3" aria-label="Elsewhere, home">
@@ -880,6 +882,13 @@ function Index() {
           </form>
         </DialogContent>
       </Dialog>
+
+      {/* Floating WhatsApp Widget */}
+      <WhatsAppWidget
+        onOpenBookingForm={(selectedJourney) =>
+          startBooking(selectedJourney ?? "An India journey", "whatsapp_floating_widget")
+        }
+      />
     </main>
   );
 }
